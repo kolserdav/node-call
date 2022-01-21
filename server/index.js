@@ -25,7 +25,6 @@ app.get('/join', (req, res) => {
 });
 const oggFile = `${DATA_PATH}/stream.webm`;
 app.get('/stream', (req, res) => {
-  console.log(322);
   const stream = fs.createReadStream(oggFile);
   stream.pipe(res);
 });
